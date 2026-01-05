@@ -20,8 +20,6 @@ const Tests = ({ name, age, email }: TestsProps) => {
     setUserInfo({ name, age, email });
   }, [name, age, email]);
 
-
-
   const submitHandler = () => {
     setShowResult(true);
   };

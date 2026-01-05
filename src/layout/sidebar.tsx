@@ -1,21 +1,28 @@
+import { Link } from "react-router"
 
 const Sidebar = () => {
   return (
     <div className="bg-background-primary text-text-primary">
-      <ul className="grid grid-cols-1 gap-4 mt-4">
-        <li className="p-4 rounded-md bg-text-primary/20 text-white">
-          <a href="/">Home</a>
-        </li>
-        <li className="p-4 rounded-md bg-text-primary/20 text-white">
-          <a href="/about">Discover</a>
-        </li>
-        <li className="p-4 rounded-md bg-text-primary/20 text-white">
-          <a href="/about">Library</a>
-        </li>
-        <li className="p-4 rounded-md bg-text-primary/20 text-white">    
-          <a href="/about">Settings</a>
-        </li>
-      </ul>
+      <div className="flex flex-col gap-6 p-4">
+           
+        <Link to="/" className="smooth-300 p-4 rounded-md group hover:bg-text-primary/20 text-white  flex flex-col items-center justify-center">
+        <i className="fi fi-rs-home group-hover:fi-ss-home text-2xl smooth-300"></i>
+          <span className="text-xs hidden group-hover:block smooth-300">Home</span> </Link>
+      
+       
+        <Link to="/discover" className="smooth-300 p-4 rounded-md group hover:bg-text-primary/20 text-white  flex flex-col items-center justify-center">
+        <i className="fi fi-rs-compass-alt group-hover:fi-ss-compass-alt text-2xl smooth-300"></i>
+            <span className="text-xs hidden group-hover:block smooth-300">Discover</span> </Link>
+      
+        <Link to="/library" className="smooth-300 p-4 rounded-md group hover:bg-text-primary/20 text-white  flex flex-col items-center justify-center">
+        <i className="fi fi-rs-book-alt group-hover:fi-ss-book-alt text-2xl smooth-300"></i>
+            <span className="text-xs hidden group-hover:block smooth-300">Library</span> </Link>
+      
+        <Link to="/settings" className="smooth-300 p-4 rounded-md group hover:bg-text-primary/20 text-white  flex flex-col items-center justify-center">    
+        <i className="fi fi-rs-settings group-hover:fi-ss-settings  text-2xl smooth-300"></i>
+            <span className="text-xs hidden group-hover:block smooth-300">Settings</span> </Link>
+      
+      </div>
     </div>
   )
 }
