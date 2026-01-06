@@ -9,7 +9,6 @@ const Sidebar = () => {
         <i className="fi fi-rs-home group-hover:fi-ss-home text-2xl smooth-300"></i>
           <span className="text-xs hidden group-hover:block smooth-300">Home</span> </Link>
       
-       
         <Link to="/discover" className="smooth-300 p-4 rounded-md group hover:bg-text-primary/20 text-white  flex flex-col items-center justify-center">
         <i className="fi fi-rs-compass-alt group-hover:fi-ss-compass-alt text-2xl smooth-300"></i>
             <span className="text-xs hidden group-hover:block smooth-300">Discover</span> </Link>
